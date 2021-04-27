@@ -7,10 +7,10 @@
 a{
     text-decoration: none !important;
 }
-
+/* main background image */
 .main_bg{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: url(../image/main_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -18,14 +18,15 @@ a{
 }
 .main_bg>div{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background: rgba(0, 0, 0, 0.36);
 }
-
+/* nav */
 .main_menu{
     width: 100%;
     height: 76PX;
     border-bottom: 1px solid rgba(59, 57, 57, 0.1); 
+
 }
 .main_logo{
     position: absolute;
@@ -33,7 +34,7 @@ a{
 }
 
 .main_nav{
-    padding: 25px 140px;
+    padding: 0 140px;
 }
 .main_nav>ul{
     display: flex;
@@ -45,7 +46,9 @@ a{
     font-size: 12PX;
 }
 .main_nav>ul>li{
-    transition:all .3s ease 
+    transition:all .3s ease;
+    height: 76px;
+    line-height: 76px;
 }
 .main_nav>ul>li:hover{
     transition:all .3s ease
@@ -55,14 +58,15 @@ a{
 }
 .main_nav>ul>li>span::after{
     content: '';
-    width: 0%;
-    left: 50%;
+    width: 50%;
+    left: 30%;
     height: 1px;
     display: block;
     position: absolute;
     margin-top: 30px;
     border-bottom: 2px solid #fff;
     transition:all .3s ease;
+    top: 18px;
 }
 .main_nav>ul>li:hover > span::after {
     content: '';
@@ -77,13 +81,49 @@ a{
   }
 
 
-/* .main_nav>ul>li:after{
-    content: "";
-    width: 20px;
-    height: 1px;
-    background: #fff;
+.sub_menu{
+    width: 188px;
+    background: #505cfd;
+    padding-bottom: 30px;
+    border-radius: 3px;
     position: absolute;
-    top: 76px;
+    top: 85px;
+    /* display: none; */
+}
+.sub_menu>li{
+    padding-top: 30px;
+    padding-left:26px;
+    line-height: 14px;
+    width: 188px;
+    display: block;
+}
+.sub_menu>li:hover>a{
+    color: #c9cdfe;
+}
+.sub_menu>li>a{
     display: flex;
-    justify-content: center;
-} */
+    justify-content: space-between;
+    padding-right: 26px;
+}
+
+.drop_down{
+    width: 188px;
+    background:#fff;
+    border-radius: 3px;
+    padding: 15px 0;
+    position: absolute;
+    left: 188px;
+    top: 10px;
+    /* display: none; */
+}
+.drop_down>.sub_drop_down{
+    width: 188px;
+}
+.drop_down>.sub_drop_down>a{
+    padding:15px 26px;
+    display: block;
+    color: #a1a1a1;
+}
+.drop_down>.sub_drop_down:hover>a{
+    color: #6d6d6d;
+}

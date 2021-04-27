@@ -7,16 +7,18 @@
     <title>main_menu</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrap">
+    <!-- <div class="wrap"> -->
         <div class="main_bg">
             <div>
-                <div class="main_menu">
+                <!-- main nav -->
+                <header class="main_menu fixed">
                     <div class="main_logo"> 
                         <a href="#">
                             <img src="image/main_logo.png" alt="logo_-mage">
@@ -40,8 +42,13 @@
                                 <li>
                                     <span><a href="#">MARKETING BIZ</a></span>
                                     <ul class="sub_menu">
-                                        <li><a href="/">국내 마케팅 <br>매니지먼트</a></li>
-                                        <li><a href="/">글로벌 마케팅</a></li>
+                                        <li><a href="/">국내 마케팅 <br>&매니지먼트<span>></span></a>
+                                            <ul class="drop_down">
+                                                <li class="sub_drop_down"><a href="/">해외환자유치 마케팅</a></li>
+                                                <li class="sub_drop_down"><a href="/">중국,러시아,일본,베트남,태국 외</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/">글로벌 마케팅<span>></span></a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -49,22 +56,48 @@
                                 </li>
                                 <li>
                                     <span><a href="#">GLOVAL BIZ</a></span>
+                                    <ul class="sub_menu">
+                                        <li><a href="/">VIETNAM BUSINESS</a></li>
+                                        <li><a href="/">THAILAND BUSINESS</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <span><a href="#">IT BIZ</a></span>
+                                    <ul class="sub_menu">
+                                        <li><a href="/">STAR EMR</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <span><a href="#">FRANCHISE BIZ</a></span>
+                                    <ul class="sub_menu">
+                                        <li><a href="/">리엔장 소개</a></li>
+                                        <li><a href="/">가맹사업 소개</a></li>
+                                        <li><a href="/">가맹상담</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <span><a href="#">CONTACT</a></span>
+                                    <ul class="sub_menu">
+                                        <li><a href="/">맵,주소,연락처</a></li>
+                                    </ul>
                                 </li>
                             </ul>    
                         </div>
                     </div>
-                </div>
+                </header>
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <div class="f_logo">
+                    <a href="/"><img src="" alt=""></a>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
 </body>
 </html>
