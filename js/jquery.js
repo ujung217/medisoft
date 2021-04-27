@@ -15,3 +15,30 @@ $(function(){
         $('.drop_down').stop().slideUp();
     });
 });
+
+ // .header-scrolled
+ $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
+  if ($(window).scrollTop() > 50) {
+    $('#header').addClass('header-scrolled');
+  };
+
+  $(window).scroll(function(){
+    if($(this).scrollTop()>50){
+      $('.main_logo').hide();
+      $('.main_logo_black').show();
+      $('.main_menu').css("background","#fff");
+      $('.main_nav>ul>li>span>a').css("color","#333");
+    } else {
+      $('.main_logo').show();
+      $('.main_logo_black').hide();
+      $('.main_menu').css("background","transparent");
+      $('.main_nav>ul>li>span>a').css("color","#fff");
+    }
+  });
