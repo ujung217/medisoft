@@ -42,3 +42,21 @@ $(function(){
       $('.main_nav>ul>li>span>a').css("color","#fff");
     }
   });
+
+  // ghost btn click
+  $(function(){
+    // $('.ghost_btn').click(function(){
+    //   $('.right_menu').animate("display","block");
+    // });
+
+    $('.ghost_btn').click(function(){
+      $('.right_menu').addClass('on');
+    });
+    $('.close_btn').click(function(){
+      $('.right_menu').removeClass('on');
+    });
+   
+  });
+
+  
+  

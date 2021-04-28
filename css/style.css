@@ -10,7 +10,7 @@ a{
 /* main background image */
 .main_bg{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background: url(../image/main_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ a{
 }
 .main_bg>div{
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background: rgba(0, 0, 0, 0.36);
 }
 /* nav */
@@ -133,18 +133,37 @@ a{
 }
 
 
-/* section{
+section{
     padding: 500px 0;
-} */
+}
 
-.rigth_menu{
+
+/* ghost btn */
+.ghost_btn{
+    position: absolute;
+    float: right;
+    top: 25px;
+    right: 30px;
+    display: none;
+}
+.ghost_btn span{
+    color: rgb(212, 212, 212);
+    float: right;
+    font-size: 25px;
+}
+/* right menu */
+.right_menu{
     position: absolute;
     z-index: 99;
     width: 393px;
     height: 100vh;
     background: #222222;
-    right: 0;
+    right: -393px;
     top: 0;
+    /* display: none; */
+}
+.right_menu.on{ 
+    right: 0; 
 }
 .close_btn{
     padding: 50px 30px;
@@ -176,4 +195,37 @@ a{
 }
 .image_box>div{
     width: 100%;
+}
+
+@media(max-width:1023px){
+    .main_nav{
+        display: none;
+    }
+    .ghost_btn{
+        display: block;
+    }
+}
+
+
+/* footer */
+.f_logo{
+    margin: 45px 0;
+}
+.copyright{
+    padding-top: 30px;
+}
+.copyright p{
+    font-size: 14px;
+    color: #7f7f7f;
+}
+@media(max-width:990px){
+    .f_logo{
+        margin: 30px 0;
+    }
+    .f_logo img{
+        width: 150px;
+    }
+    .copyright{
+        padding-top: 0;
+    }
 }
