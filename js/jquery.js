@@ -1,3 +1,5 @@
+
+// nav sldie down
 $(function(){
     $('.main_nav>ul>li').mouseover(function(){
         $('.sub_menu').stop().slideUp();
@@ -45,17 +47,24 @@ $(function(){
 
   // ghost btn click
   $(function(){
-    // $('.ghost_btn').click(function(){
-    //   $('.right_menu').animate("display","block");
-    // });
 
     $('.ghost_btn').click(function(){
       $('.right_menu').addClass('on');
+      // $('.side_bg').css("display","block");
+      $('body').addClass('off-canvas-sidebar-open');
     });
     $('.close_btn').click(function(){
       $('.right_menu').removeClass('on');
+      // $('.side_bg').css("display","none");
+      $('body').removeClass('off-canvas-sidebar-open');
     });
-   
+    // $('.side_bg').click(function(){
+    //   $('.right_menu').removeClass('on');
+    //   $('.side_bg').css("display","none");
+    // });
+    $('.ghost_btn_slide_down').click(function(){
+      $('.main_nav').stop().slideToggle();
+    });
   });
 
   
