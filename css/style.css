@@ -174,7 +174,7 @@ a{
         border-radius: 3px;
         top: 85px;
         left: 100px;
-        display: block;
+        display: none;
     }
     .sub_menu>li{
         position: static;
